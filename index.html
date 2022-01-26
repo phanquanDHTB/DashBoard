@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Name Dashboard</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fab fa-hotjar"></i></span>
+              <span class="title"> <span>Brand Name</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="title"> <span>Dashboard</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <span class="title"> <span>Customers</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-comment"></i></span>
+              <span class="title"> <span>Message</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-question-circle"></i></span>
+              <span class="title"> <span>Help</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="title"> <span> Settings</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-lock"></i></span>
+              <span class="title"> <span>Passwords</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="title"> <span> Sign out</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div id="navbar" class="topbar">
+          <div class="toggle" onclick="toggleMenu()"></div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search here" />
+              <i class="fas fa-search"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img src="./Img/Users.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,042</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">208</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-comment" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">$4,598</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="recentOders">
+            <div class="cartHeader">
+              <h2>Recent Oders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>$110</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>$620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>HP Laptop</td>
+                  <td>$2500</td>
+                  <td>Due</td>
+                  <td><span class="status inProgress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>$110</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>$620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>HP Laptop</td>
+                  <td>$2500</td>
+                  <td>Due</td>
+                  <td><span class="status inProgress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Macbook Pro</td>
+                  <td>$2200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img1.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      David <br />
+                      <span>Italy</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img2.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Ariana <br />
+                      <span>USA</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img3.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Bruce <br />
+                      <span>Mexico</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img4.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Kim Jong Huyn <br />
+                      <span>Korea</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img5.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Minamoto <br />
+                      <span>Japan</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img6.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Linh Tran <br />
+                      <span>Vietnam</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img7.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Puka<br />
+                      <span>Japan</span>
+                    </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="60px">
+                    <div class="imgBox">
+                      <img src="./Img/img8.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <h4>
+                      Chris<br />
+                      <span>England</span>
+                    </h4>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        let toggle = document.querySelector(".toggle");
+        let navigation = document.querySelector(".navigation");
+        let main = document.querySelector(".main");
+        let topbar = document.querySelector(".topbar");
+        toggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+        topbar.classList.toggle("active");
+      }
+      // var navbar = document.getElementById("navbar");
+      // var sticky = navbar.offsetTop;
+      // window.onscroll = function(){
+      //     if (window.scrollY>sticky) {
+      //         navbar.classList.add("sticky");
+      //     } else {
+      //         navbar.classList.remove("sticky");
+      //     }
+      // }
+    </script>
+  </body>
+</html>
